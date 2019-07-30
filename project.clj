@@ -9,4 +9,5 @@
 
   :main repo-archiver.core
   :profiles {:uberjar {:aot :all}}
+  :uberjar-exclusions [#".*\.edn"]
   :repl-options {:init-ns repo-archiver.core})
