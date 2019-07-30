@@ -10,10 +10,8 @@ papers published by eLife Sciences.
 
 ## Usage
 
-Credentials are required for modifying repositories. 
-
-A Personal Access Token is looked for in `./resources/personal-access-token.edn` and if your token is `123` should be
-a simple quoted string, like `"123"`.
+Credentials are required for modifying repositories. A Personal Access Token is looked for in 
+`./resources/personal-access-token.edn` and if your token is `123` should be a simple quoted string, like `"123"`.
 
 Java (see releases for downloadable jar files):
 
@@ -41,4 +39,4 @@ A list of repositories is cached at `./resources/repo-list.edn` to prevent pagin
 Unless otherwise noted, all `repo-archiver` source files are made available under the terms of the 
 GNU General Public License v3 (GPL3).
 
-See [LICENSE.txt](LICENSE.txt) for details and exceptions.
+See [LICENSE](LICENSE) for details and exceptions.
