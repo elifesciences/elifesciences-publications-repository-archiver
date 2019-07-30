@@ -39,4 +39,4 @@ A list of repositories is cached at `./resources/repo-list.edn` to prevent pagin
 Unless otherwise noted, all `repo-archiver` source files are made available under the terms of the 
 GNU General Public License v3 (GPL3).
 
-See [LICENCE](./LICENCE) for details and exceptions.
+See [LICENCE.txt](./LICENCE.txt) for details and exceptions.
