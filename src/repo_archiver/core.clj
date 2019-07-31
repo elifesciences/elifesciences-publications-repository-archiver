@@ -46,17 +46,9 @@
 (defn list-unarchived-repositories
   []
   (let [org "elifesciences-publications"
-        per-page 100
-        options {:types "public" :per-page per-page}]
-    (loop [page 1
-           results []]
-      (let [resp (repos/org-repos org (assoc options :page page))
-            unarchived-repo-list (vec (remove :archived resp))
-            recur? (-> resp count (= per-page))]
-        (if recur?
-          (recur (inc page)
-                 (into results unarchived-repo-list))
-          (into results unarchived-repo-list))))))
+        options {:types "public" :all-pages true}
+        resp (repos/org-repos org options)]
+    (vec (remove :archived resp))))
 
 ;;
 
@@ -74,4 +66,3 @@
 (defn -main
   [& args]
   (archive-all-repositories))
-  
